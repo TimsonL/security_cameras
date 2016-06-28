@@ -14,7 +14,6 @@ function init() {
         for (var i = 0; i < obj.length; i ++) {
             data.push([obj[i].Cells.geoData.coordinates[1], obj[i].Cells.geoData.coordinates[0]])
         }
-        console.log(data);
         var heatmap = new Heatmap(data, {
             radius: 20,
         });
