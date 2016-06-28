@@ -5,13 +5,12 @@ function init() {
     
     var myMap = new ymaps.Map('map', {
         center: [55.733835, 37.588227],
-        zoom: 5,
-        controls: [],
+        zoom: 11,
+        controls: []
     });
 
     ymaps.modules.require(['Heatmap'], function (Heatmap) {
         var data = [];
-        console.log(data);
         for (var i = 0; i < obj.length; i ++) {
             data.push([obj[i].Cells.geoData.coordinates[1], obj[i].Cells.geoData.coordinates[0]])
         }
